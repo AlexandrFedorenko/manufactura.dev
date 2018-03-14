@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html lang="ru" class="lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]><html lang="ru" class="lt-ie9 lt-ie8"><![endif]-->
+<!--[if IE 8]><html lang="ru" class="lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="">
+<!--<![endif]-->
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <title>Заголовок</title>
+    <!-- Seo Tags -->
+    <meta name="description" content="Your page description here"/>
+    <meta name="keywords" content="Your meta keywords, here"/>
+    <meta name="robots" content="index, follow">
+    <!-- /Seo Tags -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+<!--[if lt IE 8]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+
+<div class="wrapper">
+    <div class="main-content">
+        <div class="mob-header mob-header--close">
+            <ul class="mob-menu-top ul">
+                <li class="mob-menu-top_item"><a href="#">Одежда и обувь</a></li>
+                <li class="mob-menu-top_item"><a href="#">Аксессуары</a></li>
+                <li class="mob-menu-top_item"><a href="#">Детям</a></li>
+                <li class="mob-menu-top_item"><a href="#">Украшения</a></li>
+                <li class="mob-menu-top_item"><a href="#">Для дома</a></li>
+                <li class="mob-menu-top_item"><a href="#">Сувениры и подарки</a></li>
+                <li class="mob-menu-top_item"><a href="#">Куклы и игрушки</a></li>
+                <li class="mob-menu-top_item"><a href="#">Красота и уход</a></li>
+                <li class="mob-menu-top_item"><a href="#">Еда</a></li>
+            </ul>
+            <div class="mob-header-bot">
+                <ul class="mob-header-bot_ul ul">
+                    <li class="mob-header-bot_item"><a href="#">Распродажи</a></li>
+                    <li class="mob-header-bot_item"><a href="#">Блог</a></li>
+                    <li class="mob-header-bot_ul_last"><a href="#">Создать магазин</a></li>
+                </ul>
+                <div class="wrap-social">
+                    <div class="socials-icon">
+                        <ul class="socials-ul ul">
+                            <li class="socials-ul_item"><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                            <li class="socials-ul_item"><a href="#"><i class="fa fa-vk" aria-hidden="true"></i></a></li>
+                            <li class="socials-ul_item"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                            <li class="socials-ul_item"><a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a></li>
+                            <li class="socials-ul_item"><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <header class="header-main">
+            <div class="top-header">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-xl-5 col-lg-4">
+                            <div class="logo">
+                                <div class="search search--mob">
+                                    <span class="search_icon" onclick="setOpenClassMob()"><i class="fa fa-search" aria-hidden="true"></i></span>
+                                    <form action="#" method="get" class="search_form search_form--close search_form--mob ">
+                                        <div class="search-form-wrap">
+                                            <input type="search" class="search_inp" placeholder="Искать по разделу">
+                                            <button type="submit" class="search_sub"><i class="fa fa-search" aria-hidden="true"></i></button>
+                                        </div>
+                                    </form>
+                                </div>
+                                <a href="#"><img src="img/logo.png" alt="logo" class="logo_img"></a>
+                                <div onclick="setOpenMenu()" class="burger-menu">
+                                    <div class="burger"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-5 hidden-md">
+                            <ul class="top-menu ul">
+                                <li class="top-menu_item"><a href="#">Распродажи</a></li>
+                                <li class="top-menu_item"><a href="#">БлогИ</a></li>
+                                <li class="top-menu_item"><a href="#">Создать магазин</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-3 hidden-md">
+                            <div class="socials">
+                                <div class="socials-icon">
+                                    <ul class="socials-ul ul">
+                                        <li class="socials-ul_item"><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                        <li class="socials-ul_item"><a href="#"><i class="fa fa-vk" aria-hidden="true"></i></a></li>
+                                        <li class="socials-ul_item"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                        <li class="socials-ul_item"><a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a></li>
+                                        <li class="socials-ul_item"><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                                    </ul>
+                                </div>
+                                <div class="socials-search">
+                                    <div class="search">
+                                        <span class="search_icon" onclick="setOpenClass()"><i class="fa fa-search" aria-hidden="true"></i></span>
+                                        <form action="#" method="get" class="search_form search_form--close search_form--desc ">
+                                            <div class="search-form-wrap">
+                                                <input type="search" class="search_inp" placeholder="Искать по разделу">
+                                                <button type="submit" class="search_sub"><i class="fa fa-search" aria-hidden="true"></i></button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header hidden-md">
+                <div class="container">
+                    <nav>
+                        <ul class="menu ul">
+                            <li class="menu_item"><a href="#">Одежда и обувь Аксессуары</a></li>
+                            <li class="menu_item"><a href="#">Дети</a></li>
+                            <li class="menu_item"><a href="#">Украшения</a></li>
+                            <li class="menu_item"><a href="#">Для дома</a></li>
+                            <li class="menu_item"><a href="#">Сувениры и подарки</a></li>
+                            <li class="menu_item"><a href="#">Куклы и игрушки</a></li>
+                            <li class="menu_item"><a href="#">Красота и уход</a></li>
+                            <li class="menu_item"><a href="#">Еда</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <section>
+            <div class="wra-main-slider">
+                <div class="container no-mar">
+                    <div class="owl-carousel main-slider">
+                        <div class="main-slider_item">
+                            <div class="main-slider_overlay"></div>
+                            <div class="main-slider-text-block">
+                                <h1 class="main-slider-text-block_h1">Изделия из натуральной кожи</h1>
+                                <p class="main-slider-text-block_descrip">
+                                    Семейное мануфактурное производство, которое уделяет
+                                    большое внимание деталям
+                                </p>
+                                <a href="#" class="main-slider-text-block_link big-btn">Подробнее</a>
+                            </div>
+                            <img src="img/slide.jpg" alt="images" class="main-slider_img">
+                        </div>
+                        <div class="main-slider_item">
+                            <div class="main-slider_overlay"></div>
+                            <div class="main-slider-text-block">
+                                <h1 class="main-slider-text-block_h1">Изделия из натуральной кожи</h1>
+                                <p class="main-slider-text-block_descrip">
+                                    Семейное мануфактурное производство, которое уделяет
+                                    большое внимание деталям
+                                </p>
+                                <a href="#" class="main-slider-text-block_link big-btn">Подробнее</a>
+                            </div>
+                            <img src="img/slide.jpg" alt="images" class="main-slider_img">
+                        </div>
+                        <div class="main-slider_item">
+                            <div class="main-slider_overlay"></div>
+                            <div class="main-slider-text-block">
+                                <h1 class="main-slider-text-block_h1">Изделия из натуральной кожи</h1>
+                                <p class="main-slider-text-block_descrip">
+                                    Семейное мануфактурное производство, которое уделяет
+                                    большое внимание деталям
+                                </p>
+                                <a href="#" class="main-slider-text-block_link big-btn">Подробнее</a>
+                            </div>
+                            <img src="img/slide.jpg" alt="images" class="main-slider_img">
+                        </div>
+                        <div class="main-slider_item">
+                            <div class="main-slider_overlay"></div>
+                            <div class="main-slider-text-block">
+                                <h1 class="main-slider-text-block_h1">Изделия из натуральной кожи</h1>
+                                <p class="main-slider-text-block_descrip">
+                                    Семейное мануфактурное производство, которое уделяет
+                                    большое внимание деталям
+                                </p>
+                                <a href="#" class="main-slider-text-block_link big-btn">Подробнее</a>
+                            </div>
+                            <img src="img/slide.jpg" alt="images" class="main-slider_img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <article>
+            <div class="container no-mar">
+                <div class="best-item-top">
+                    <div class="best-item-top-left">
+                        <h2 class="best-item-top-left_h2 h2">Лучшие товары</h2>
+                    </div>
+                    <div class="best-item-top-right">
+                        <div class="best-item-top-rig-l">
+                            <a href="#" class="best-item-top-rig-l_link">Подарок на 14 февраля</a>
+                            <a href="#" class="best-item-top-rig-l_link">Удивительные украшения</a>
+                            <a href="#" class="best-item-top-rig-l_link">Лучшие подарки мужчине</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="owl-carousel best-item">
+                    <div class="best-item_items">
+
+                    </div>
+                </div>
+            </div>
+        </article>
+    </div>
+    <footer class="footer"></footer>
+</div>
+
+
+
+<!--[if lt IE 9]>
+<script src="libs/html5shiv/es5-shim.min.js"></script>
+<script src="libs/html5shiv/html5shiv.min.js"></script>
+<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+<script src="libs/respond/respond.min.js"></script>
+<![endif]-->
+
+
+<script src="libs/jquery/jquery-3.2.1.min.js"></script>
+<script src="libs/OwlCarousel2-2.3.2/dist/owl.carousel.min.js"></script>
+<script src="js/sliders.js"></script>
+<script src="js/custom.js"></script>
+<script>
+    $(document).ready(function(){
+
+        //main slider
+        $(".best-item").owlCarousel({
+            items: 3,
+            autoplay:true,
+            dots:true
+        });
+
+
+    });
+</script>
+<!-- Yandex.Metrika counter --><!-- /Yandex.Metrika counter -->
+<!-- Google Analytics counter --><!-- /Google Analytics counter -->
+</body>
+</html>

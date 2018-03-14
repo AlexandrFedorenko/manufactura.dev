@@ -1,0 +1,21 @@
+//bold
+@font-face {
+  font-family: 'bold';
+  src: url('../fonts/Radomir Tinkov - Gilroy-ExtraBold.eot');
+  src: local('☺'), url('../fonts/Radomir Tinkov - Gilroy-ExtraBold.woff') format('woff'),
+  url('../fonts/Radomir Tinkov - Gilroy-ExtraBold.ttf') format('truetype'),
+  url('../fonts/Radomir Tinkov - Gilroy-ExtraBold.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+//light
+@font-face {
+  font-family: 'light';
+  src: url('../fonts/Radomir Tinkov - Gilroy-Light.eot');
+  src: local('☺'), url('../fonts/Radomir Tinkov - Gilroy-Light.woff') format('woff'),
+  url('../fonts/Radomir Tinkov - Gilroy-Light.ttf') format('truetype'),
+  url('../fonts/Radomir Tinkov - Gilroy-Light.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
