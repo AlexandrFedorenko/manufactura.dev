@@ -195,15 +195,79 @@
                             <a href="#" class="best-item-top-rig-l_link">Удивительные украшения</a>
                             <a href="#" class="best-item-top-rig-l_link">Лучшие подарки мужчине</a>
                         </div>
+                        <div class="best-item-top-right-r">
+                            <div class="best-item-top-right-prev arr"><i class="fa fa-chevron-left" aria-hidden="true"></i></div>
+                            <div class="best-item-top-right-next arr"><i class="fa fa-chevron-right" aria-hidden="true"></i></div>
+                        </div>
                     </div>
                 </div>
+                <div class="line">
+                    <div class="line_bg"></div>
+                </div>
                 <div class="owl-carousel best-item">
-                    <div class="best-item_items">
-
+                    <div class="best-item-items">
+                        <a href="#">
+                            <img src="img/img0.jpg" alt="images" class="best-item-items_img">
+                            <p class="best-item-items_name-text">Портмоне PRIDE цвет Black Carbon</p>
+                            <p class="best-item-items_name">GINZO</p>
+                            <p class="best-item-items_price">3 740 ₽</p>
+                        </a>
+                    </div>
+                    <div class="best-item-items">
+                        <a href="#">
+                            <img src="img/img0.jpg" alt="images" class="best-item-items_img">
+                            <p class="best-item-items_name-text">Портмоне PRIDE цвет Black Carbon</p>
+                            <p class="best-item-items_name">GINZO</p>
+                            <p class="best-item-items_price">3 740 ₽</p>
+                        </a>
+                    </div>
+                    <div class="best-item-items">
+                        <a href="#">
+                            <img src="img/img0.jpg" alt="images" class="best-item-items_img">
+                            <p class="best-item-items_name-text">Портмоне PRIDE цвет Black Carbon</p>
+                            <p class="best-item-items_name">GINZO</p>
+                            <p class="best-item-items_price">3 740 ₽</p>
+                        </a>
+                    </div>
+                    <div class="best-item-items">
+                        <a href="#">
+                            <img src="img/img0.jpg" alt="images" class="best-item-items_img">
+                            <p class="best-item-items_name-text">Портмоне PRIDE цвет Black Carbon</p>
+                            <p class="best-item-items_name">GINZO</p>
+                            <p class="best-item-items_price">3 740 ₽</p>
+                        </a>
+                    </div>
+                    <div class="best-item-items">
+                        <a href="#">
+                            <img src="img/img0.jpg" alt="images" class="best-item-items_img">
+                            <p class="best-item-items_name-text">Портмоне PRIDE цвет Black Carbon</p>
+                            <p class="best-item-items_name">GINZO</p>
+                            <p class="best-item-items_price">3 740 ₽</p>
+                        </a>
+                    </div>
+                    <div class="best-item-items">
+                        <a href="#">
+                            <img src="img/img0.jpg" alt="images" class="best-item-items_img">
+                            <p class="best-item-items_name-text">Портмоне PRIDE цвет Black Carbon</p>
+                            <p class="best-item-items_name">GINZO</p>
+                            <p class="best-item-items_price">3 740 ₽</p>
+                        </a>
                     </div>
                 </div>
             </div>
         </article>
+        <div class="block-baners">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="item-baner">
+
+                        </div>
+                    </div>
+                    <div class="col-md-6"></div>
+                </div>
+            </div>
+        </div>
     </div>
     <footer class="footer"></footer>
 </div>
@@ -226,15 +290,47 @@
     $(document).ready(function(){
 
         //main slider
-        $(".best-item").owlCarousel({
+        var owl = $('.best-item');
+        owl.owlCarousel({
+            loop:true,
             items: 3,
             autoplay:true,
-            dots:true
+            margin:60,
+            dots:true,
+            nav:false,
+            responsiveClass:true,
+            responsive:{
+                0:{
+                    items:1,
+                    margin:10,
+                    center: true,
+                    nav:false
+                },
+                768:{
+                    items:2,
+                    nav:false
+                },
+                1000:{
+                    items:3,
+                    nav:true,
+                    loop:false
+                }
+            }
         });
 
-
+// Go to the next item
+        $('.best-item-top-right-next').click(function() {
+            owl.trigger('next.owl.carousel');
+        });
+// Go to the previous item
+        $('.best-item-top-right-prev').click(function() {
+            // With optional speed parameter
+            // Parameters has to be in square bracket '[]'
+            owl.trigger('prev.owl.carousel', [300]);
+        });
     });
 </script>
+
 <!-- Yandex.Metrika counter --><!-- /Yandex.Metrika counter -->
 <!-- Google Analytics counter --><!-- /Google Analytics counter -->
 </body>
