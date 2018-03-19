@@ -3,3 +3,127 @@
 .item-baner{
   position: relative;
 }
+.item-baner_img{
+  width: 100%;
+  display: block;
+}
+.item-baner_overlay{
+  position: absolute;
+  z-index: 9;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+}
+.item-baner-content_num{
+  padding-bottom: 5px;
+  color: white;
+  font-family: $bold;
+  font-size: 48px;
+  transition: .3s;
+}
+.item-baner-content_text{
+  padding-bottom: 20px;
+  color: white;
+  font-family: $bold;
+  font-weight: 400;
+  max-width: 369px;
+  font-size: 24px;
+  transition: .3s;
+}
+.link-btn{
+  display: inline-block;
+  color: #000000;
+  font-family: $bold;
+  font-size: 18px;
+  text-transform: uppercase;
+  padding: 14px 18px;
+  background: $yellow;
+  transition: .3s;
+}
+.item-baner{
+  a{
+    text-decoration: none;
+    &:hover{
+      .item-baner-content_num,
+      .item-baner-content_text{
+        color: $textYellow;
+      }
+      .link-btn{
+        color: white;
+        background: $black;
+      }
+    }
+  }
+}
+.item-baner-content{
+  z-index: 999;
+  position: absolute;
+  top: 10px;
+  left: 20px;
+}
+.block-baners{
+  margin-bottom: 40px;
+}
+.owl-carousel{
+  margin-bottom: 40px;
+}
+.owl-nav{
+  display: none;
+}
+
+
+
+
+
+
+//media
+
+@media  (max-width: 1200px){
+  .item-baner-content_num{
+    font-size: 28px;
+  }
+  .item-baner-content_text{
+    font-size: 18px;
+  }
+}
+
+@media  (max-width: 992px){
+  .item-baner-content_num{
+    font-size: 26px;
+    padding-bottom: 2px;
+  }
+  .item-baner-content_text{
+    font-size: 16px;
+    padding-bottom: 10px;
+  }
+  .link-btn{
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}
+@media  (max-width: 768px){
+  .item-baner{
+    margin-bottom: 25px;
+  }
+  .item-baner_img{
+    min-height: 220px;
+  }
+  .item-baner-content {
+    z-index: 999;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .best-item-items{
+    margin: 0 auto;
+  }
+}

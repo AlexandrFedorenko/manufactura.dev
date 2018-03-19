@@ -192,7 +192,31 @@
     display: none;
   }
 }
-
+.mag-nev-item_img{
+  display: block;
+  max-width: 225px;
+  width: 100%;
+}
+.wrap-img-slid{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.mag-nev-item_img-min{
+  display: block;
+  max-width: 115px;
+  width: 100%;
+  margin-bottom: 6px;
+  &:last-child{
+    margin-bottom: 0;
+  }
+}
+.block-mini-img{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
 //media
 @media (max-width: 1200px){
   .best-item-items_name-text{
