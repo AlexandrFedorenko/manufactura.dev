@@ -14,7 +14,7 @@
 }
 
 .logo_img {
-  margin: 0 auto;
+
   max-width: 310px;
   width: 100%;
   display: block;
@@ -269,6 +269,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+  .logo_img{
+    margin: 0 auto;
   }
 
   .mob-header {

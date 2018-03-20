@@ -72,8 +72,59 @@
 .owl-nav{
   display: none;
 }
-
-
+.main-baner{
+  position: relative;
+}
+.main-baner_img{
+  width: 100%;
+  display: block;
+  margin-bottom: 40px;
+}
+.main-baner_overlay{
+  position: absolute;
+  z-index: 9;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+}
+.main-baner-content{
+  z-index: 99999;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.main-baner-content_text{
+  color: #ffffff;
+  font-family: $bold;
+  font-size: 48px;
+  line-height: 1em;
+  padding-left: 20px;
+  padding-top: 20px;
+}
+.main-baner-link{
+  margin-bottom: 30px;
+  margin-left: 20px;
+}
+.main-baner-cont{
+  display: block;
+  &:hover{
+    .link-btn{
+      background: black;
+      color: white;
+    }
+    .main-baner-content_text{
+      color: $textYellow;
+    }
+  }
+}
 
 
 
@@ -101,6 +152,19 @@
   .link-btn{
     font-size: 14px;
     padding: 8px 16px;
+  }
+  .main-baner_img{
+    min-height: 240px;
+  }
+  .main-baner-content_text{
+    padding-left: 0;
+    text-align: center;
+    max-width: 235px;
+    margin: 0 auto 0;
+    font-size: 22px;
+  }
+  .main-baner-link{
+    margin: 0 auto 30px;
   }
 }
 @media  (max-width: 768px){
